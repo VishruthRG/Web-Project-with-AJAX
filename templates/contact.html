@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <link href="https://fonts.googleapis.com/css?family=Anton|Raleway:400,600,800" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="contact.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css?family=Acme|Oswald:400,600" rel="stylesheet">
+   <style type="text/css">
+      body {
+    margin-left: 3%;
+   color: #A9A9A9;
+    background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/06/Free-Desktop-HD-Book-Wallpapers.jpg); 
+     background-size: cover;
+  background-position: center;
+    }
+    
+    html {
+        height:100%;
+    }
+
+.container {
+    font-family: raleway;
+     font-size: 20px;
+     letter-spacing: 5px;
+     font-weight: 600;
+    padding-top: 4%;
+    text-align: center;     
+    color: #FFFFFF;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.fieldset {
+    font-family: raleway;
+     font-size: 30px;
+     letter-spacing: 5px;
+     font-weight: 400;
+    padding-top: 4%;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+
+}
+
+.line {
+    width:800px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+
+}
+#heading {
+    padding-bottom: 10%;
+}
+
+
+ .contact-main-section {
+        background: #efeded;
+        padding: 75px;
+    }
+    .contact-section {
+        display: inline-block;
+        position: absolute;
+        padding-left: 50px;
+    }
+    .contact-details {
+        color: #D75815;
+    }
+    .navbar-header {
+    font-family: Acme;
+   font-size: 55px;
+   letter-spacing: 5px;
+   font-weight:500;
+}
+.collapse {
+    font-family: Oswald;
+   font-size: 15px;
+   letter-spacing: 5px;
+   font-weight:500;
+}
+   </style>
+</head>
+<body>
+<!-- nav bar  -->
+<nav class="navbar navbar-inverse">
+  
+       <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Essay<span class="glyphicon glyphicon-grain" aria-hidden="true"></span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-nav-demo">
+       <ul class="nav navbar-nav">
+         <li><a href="./index.html">Home</a></li>
+         <li><a href="./about.html">About</a></li>
+         <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Signup <i class="fa fa-user-plus" aria-hidden="true"></i></a></li>
+          <li><a href="#"></i>Login <i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
+         </ul>
+     </div>
+</nav>
+<!-- nav bar  -->
+
+
+<!-- body -->
+<div class="container">
+
+  <h1><strong>Automated Essay Assessment</strong></h1>
+  <br>
+  <br>
+
+  <form name="myForm" action="" onsubmit="return validateForm()" method="post">
+            <fieldset>
+                <legend><strong>SHARE YOUR INFORMATION AND WE WILL CONTACT YOU</strong></legend>
+                <input type="text" placeholder="Name (first and Last)" name="name" required>
+                <br><br>
+                <input type="text" placeholder="Company Name" name="company" required>
+                <br><br>
+                <input type="email" placeholder="Email" name="email" required>
+                <br><br>
+                <input type="text" placeholder="Phone" name="phone" required>
+                <br><br>
+                <button type="submit" value="Submit">Submit</button>
+            </fieldset>
+            </form>
+          
+                <h3>Contact Us</h3>
+                <p>Phone: <span class="contact-details">+1 269 873-2639</span></p>
+                <p>Email: <span class="contact-details">pesuniversity.edu</span></p>
+          
+      </div>
+    </div>
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js" integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

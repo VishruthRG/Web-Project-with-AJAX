@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup</title>
+  <link href="https://fonts.googleapis.com/css?family=Anton|Raleway:400,600,800" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="signup.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css?family=Acme|Oswald:400,600" rel="stylesheet">
+   <style type="text/css">
+     body {
+  margin-left: 3%;
+   color: #A9A9A9;
+  background-image: url(https://www.pixelstalk.net/wp-content/uploads/images1/Desk-Wallpapers-HD.jpg); 
+   background-size: cover;
+  background-position: center;
+  }
+  
+  html {
+      height :100%;
+  }
+
+.container {
+  font-family: raleway;
+   font-size: 25px;
+   letter-spacing: 5px;
+  padding-top: 4%;
+  text-align: right;
+  color: #F1f1f1;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.font {
+    font-family: raleway;
+   font-size: 25px;
+   letter-spacing: 2px;
+    color: black;
+    
+}
+.line {
+  width:200px;
+  border-top: 1px solid   #B8B8B8;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+
+}
+#heading {
+  padding-bottom: 7%;
+  padding-left: 22%;
+}
+
+::placeholder {
+    color: black;
+    background-color: transparent;
+}
+.navbar-header {
+    font-family: Acme;
+   font-size: 55px;
+   letter-spacing: 5px;
+   font-weight:500;
+}
+.collapse {
+    font-family: Oswald;
+   font-size: 15px;
+   letter-spacing: 5px;
+   font-weight:500;
+}
+   </style>
+</head>
+<body>
+<!-- nav bar  -->
+<nav class="navbar navbar-inverse">
+  
+       <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">ESSAY<span class="glyphicon glyphicon-grain" aria-hidden="true"></span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-nav-demo">
+       <ul class="nav navbar-nav">
+         <li><a href="./index.html">Home</a></li>
+         <li><a href="./about.html">About</a></li>
+         <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="./signup.html">Signup <i class="fa fa-user-plus" aria-hidden="true"></i></a></li>
+          <li><a href="./login.html">Login <i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
+         </ul>
+     </div>
+</nav>
+<!-- nav bar  -->
+
+
+<!-- body -->
+<div class="container">
+
+<h1 id="heading"><strong>Signup</strong></h1>
+
+<div class="fieldsetMenu" >
+     <form name="mForm" action="/signup.php" method="post">
+	<fieldset>
+
+	<li><label  for="first name">Firstname:</label>     
+	<input class="font" type="text"  name="firstname"  id="FIRST_NAME" onblur="show()" placeholder= "firstname" required></li>
+	<li><label  for="last name">Lastname:</label>
+    <input class="font" type="text"  name="lastname"  id="LAST NAME"  placeholder= "Lastname" required ></li>
+     <li><label  for="email">Email Address:</label>   
+	<input  type="email"  name="email"  id="EMAIL ADRESS"  placeholder= "Ex:pesuniversity.edu" required></li>
+    <li><label  for="last name">Username:</label>
+    <input class="font" type="text"  name="username"  id="username" placeholder= "Username" required></li	>
+   <li><label  for="gender">Gender:</label> 
+     <select id="gender" name="gender" size="1">	
+	 <option class="font">Male</option> 
+	<option class="font">Female</option> </select></li>
+	<li><label>Birthday:</label>
+	 <input class="font" type="text"  name="dob"  id="DOB"  placeholder= "(yyyy/mm/dd)" required ></li>
+	
+	<li><label  for="new password">Password:</label>   
+	<input class="font" type="text"  name="password"  id="password" placeholder= "Create password" pattern=.{5,10} required title="Password must be between 5 to 10 characters"></li>
+	   
+    <input  type="Submit"  value="Submit" onclick="send()"></fieldset>  
+	</form>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js" integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+      function show(){
+        var c = document.getElementById('FIRST_NAME');
+        alert('Queued!');
+      }
+      function send(){
+        alert('Queue sent!');
+      }
+
+    /* attach a submit handler to the form */
+    $("#formoid").submit(function(event) {
+
+      /* stop form from submitting normally */
+      event.preventDefault();
+
+      /* get the action attribute from the <form action=""> element */
+      var $form = $( this ),
+          url = $form.attr( 'action' );
+
+      /* Send the data using post with element id name and name2*/
+      var posting = $.post( url, { name: $('#name').val(), name2: $('#name2').val() } );
+
+      /* Alerts the results */
+      posting.done(function( data ) {
+        alert('Queued!');
+      });
+    });
+</script>
+
+</body>
+</html>
